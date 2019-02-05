@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import AddButton from '../components/AddButton';
 import LikeButton from '../components/LikeButton';
 import { likeDestination } from '../actions';
 import { Button } from 'react-bootstrap';
@@ -29,7 +28,6 @@ class DestinationCard extends Component {
             </Link>
             <li>{astronomical_body}</li>
           </ul>
-          <AddButton destination={this.props.destination} addDestination={this.handleOnClick} />
           <LikeButton destination={this.props.destination} likeDestination={this.handleOnClick2} />
         </div>
       </div>

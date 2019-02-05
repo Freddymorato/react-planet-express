@@ -8,7 +8,6 @@ import CommentsList from '../components/CommentsList';
 import CommentNew from '../components/CommentNew';
 import LikeButton from '../components/LikeButton'
 import { Button } from 'react-bootstrap';
-import AddButton from '../components/AddButton';
 
 
 class DestinationShow extends React.Component {
@@ -36,7 +35,6 @@ class DestinationShow extends React.Component {
         </div>
         <p className="dest-p">{destination.description}</p>
         <Button className="btn btn-sm btn-outline-dark" onClick={() => deleteDestination(destination.id, history)}>Delete</Button>
-        <AddButton destination={this.props.destination} addDestination={this.handleOnClick} />
         <LikeButton destination={destination} likeDestination={this.handleOnClick} />
 
         <div className="comment-section">

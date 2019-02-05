@@ -6,7 +6,6 @@ import DestinationsList from '../components/DestinationsList'
 import DestinationShow from './DestinationShow';
 
 
-
 class DestinationsContainer extends React.Component {
 
   componentDidMount() {
