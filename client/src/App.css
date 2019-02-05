@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
   background-color: #051838;
@@ -172,4 +173,204 @@ h4 {
 #logo-box {
   width: 8%;
   margin: 0;
+}
+
+/***** AstroBodyFilter *****/
+
+.filter {
+  width: 57vw;
+  border-bottom: 1px solid #f8e080;
+  border-radius: 1px;
+  padding-bottom: 1%;
+  margin: 0 auto 2% auto;
+}
+
+.filter-label {
+  margin: 0 1% 0 1%;
+}
+
+/***** Footer *****/
+
+footer {
+  width: 80%;
+  margin: 2% auto 0 auto;
+  padding-bottom: .7%;
+  font-size: calc(4px + 1vmin);
+  color: #fff;
+}
+
+#nasa-box {
+  width: 40%;
+  margin: 0 auto 0 auto;
+}
+
+#nasa-pic-box {
+  display: inline-block;
+  width: 9%;
+}
+
+/***** Landing *****/
+
+#star-1 {
+  margin-bottom: 10%;
+  float: right;
+  width: 4%;
+  animation: App-logo-spin infinite 20s reverse;
+}
+
+#star-2 {
+  margin-left: 10%;
+  width: 3%;
+  animation: App-logo-spin infinite 40s alternate;
+}
+
+#star-3 {
+  float: right;
+  width: 2%;
+  animation: App-logo-spin infinite 30s linear;
+}
+
+#star-4 {
+  width: 2%;
+  animation: App-logo-spin infinite 10s linear;
+}
+
+#welcome-logo {
+  width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto 5% auto;
+  font-family: 'Audiowide', cursive !important;
+}
+
+#landing-p {
+  text-align: center;
+  margin: 0 auto 5% auto;
+}
+
+.btn-danger:hover {
+  background-color: #D92424 !important;
+}
+
+.outter-home-wrapper {
+  width: 80%;
+  min-height: 500px;
+  margin-bottom: 10%;
+}
+
+.inner-home-wrapper {
+  width: 62%;
+  margin: 10% auto 0 auto;
+
+}
+
+/***** NewDestination *****/
+
+.destination-form {
+  width: 50%;
+}
+
+.btn.btn-primary.btn-lg.btn-block {
+  width: 60%;
+  margin: 6% auto 6% auto;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  font-size: calc(1px + 2vmin);
+}
+
+.btn.btn-primary.btn-lg.btn-block:hover{
+  background-color: #D92424;
+}
+
+/***** DestinationShow *****/
+
+.destination-show {
+  width: 50%;
+  text-align: left;
+  margin: .9%;
+  padding: 1.5%;
+  border: 1px solid #f8e080;
+  border-radius: 1px;
+}
+
+.pic-box-2 {
+  width: 40%;
+  height: auto;
+  margin: 0 auto 0 auto;
+}
+
+.comment-section {
+  padding-top: 3%;
+  margin-top: 4%;
+  border-top: 1px solid #f8e080;
+  border-radius: 1px;
+}
+
+.btn.btn-sm.btn-outline-dark {
+  border: 1px solid grey;
+  color: grey;
+  margin-right: 5%;
+}
+
+.btn.btn-sm.btn-outline-dark:hover {
+  border: 1px solid #343a40;
+  color: #fff;
+}
+
+.btn.btn-outline-warning-2.btn.btn-default {
+  width: 100%;
+  margin: 0 0 3% 0;
+  color: #f8e080;
+  border-color: #f8e080;
+  pointer-events: none;
+}
+
+.dest-p {
+  margin-bottom: 3%;
+}
+
+.dest-p-2 {
+  margin: 0 10% 0 0;
+  display: inline;
+}
+
+.details-box {
+  margin-bottom: 3%;
+}
+
+.comment {
+  background-color: #fff;
+  height: auto;
+  color: #343a40;
+  opacity: .8;
+  border-radius: 1px;
+  padding: 1.5%;
+  margin-bottom: 2%;
+  font-size: 1vw;
+}
+
+.comment-form {
+  padding-top: 3%;
+  border-top: 1px solid #f8e080;
+  margin-top: 5%;
+}
+
+.commenter {
+  text-align: right;
+  margin: .5% 0 0 0;
+}
+
+.btn.btn-sm.btn-dark {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn.btn-sm.btn-dark:active {
+  background-color: red !important;
+  border-color: #007bff !important;
 }
