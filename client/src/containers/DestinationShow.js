@@ -23,6 +23,8 @@ class DestinationShow extends React.Component {
 
   render() {
     const { destination, comments, deleteDestination, history } = this.props;
+
+    let google_maps_path  =`https://www.${destination.view_on_maps}`
     return (
       <div className="destination-show">
         <div className="pic-box-2">
@@ -31,7 +33,8 @@ class DestinationShow extends React.Component {
         <Button className="btn btn-outline-warning-2">{destination.name}</Button>
         <div className="details-box">
           <p className="dest-p-2">Astronomical Body: {destination.astronomical_body}</p>
-          <p className="dest-p-2">Radius: {destination.radius} miles</p>
+          <p className="dest-p-2">Radius: {destination.radius} miles</p><br></br>
+          Google Maps:<a href="">{google_maps_path}</a>
         </div>
         <p className="dest-p">{destination.description}</p>
         <Button className="btn btn-sm btn-outline-dark" onClick={() => deleteDestination(destination.id, history)}>Delete</Button>
