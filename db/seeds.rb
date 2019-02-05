@@ -28,12 +28,12 @@ destinations = Destination.create([
 # Comments
 
 comments = Comment.create([
-  {content: "I never even heard of this planet until last year! This place is amazing.", commenter: "Kimmy Schmidt", destination_id: 1},
-  {content: "Amazing food and wine list. I recommend the Pinot Noir.", commenter: "Titus A.", destination_id: 1},
-  {content: "Had a nice meal with Walt and Jess. Good place for mixing brunch and business deals.", commenter: "Saul Goodman", destination_id: 2},
-  {content: "So glad we came here instead of using our crockpot!", commenter: "Jack Pearson", destination_id: 3},
-  {content: "This restaurant was fantastic! Planning a girls' brunch soon with everyone except Carole.", commenter: "Bethenny", destination_id: 4},
-  {content: "Awesome brunch spot! Love the bottomless mimosas!", commenter: "Dorinda", destination_id: 4},
-  {content: "Great place to see and be seen (and secretly record conversations).", commenter: "Omarosa", destination_id: 5},
-  {content: "Best restaurant that has ever existed. Period.", commenter: "Sean S.", destination_id: 6}
+  {content: "The best food and culture!", commenter: "Kimmy Schmidt", destination_id: 1},
+  {content: "Amazing experience. Go for the Caribbean region.", commenter: "Titus A.", destination_id: 1},
+  {content: "Great spot. One of my favorites.", commenter: "Saul Goodman", destination_id: 2},
+  {content: "So glad we came here instead of Earth!", commenter: "John Snow", destination_id: 3},
+  {content: "This destination is best experienced with your significant other.", commenter: "Rick Sanchez", destination_id: 4},
+  {content: "Breath taking views!", commenter: "Steph Curry", destination_id: 4},
+  {content: "Plenty of exploration to be done.", commenter: "Morty Smith", destination_id: 5},
+  {content: "Best vacation destination that has ever existed. Period.", commenter: "Ragnar Lothbrok", destination_id: 6}
 ]);

@@ -23,7 +23,6 @@ class DestinationShow extends React.Component {
 
   render() {
     const { destination, comments, deleteDestination, history } = this.props;
-
     let google_maps_path  =`https://www.${destination.view_on_maps}`
     return (
       <div className="destination-show">
