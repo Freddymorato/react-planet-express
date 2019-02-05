@@ -8,9 +8,9 @@ This is a simple outer space travel app that allows you to create and delete des
 Clone this repo. Within the main directory, type the following lines into your terminal.
 
     $ bundle install
-    $ rails db:create
-    $ rails db:migrate
-    $ rails db:seed
+    $ rake db:create
+    $ rake db:migrate
+    $ rake db:seed
 
 Within the client directory, type the following line into your terminal.
 
