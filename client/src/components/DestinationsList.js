@@ -8,12 +8,20 @@ class DestinationsList extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      astroFilter: 'All'
+      astroFilter: 'All',
+      sorted: false
     }
   }
 
   renderDestinations = (destinations) => {
     return destinations.map(destination => <DestinationCard key={destination.id} destination={destination} />)
+  }
+
+  handleFilterChange = (event) => {
+    this.setState({
+      [event.target.name]: event.target.value,
+      sorted: false
+    });
   }
 
   destinationFilter = () => {
@@ -26,21 +34,30 @@ class DestinationsList extends React.Component {
     return filteredList
   }
 
-  handleFilterChange = (event) => {
+  handleClick = () => {
     this.setState({
-      [event.target.name]: event.target.value
+      sorted: true
     });
   }
 
-  render(){
-    return (
-      <React.Fragment>
-        <AstroBodyFilter handleChange={this.handleFilterChange} />
-        <div className="dest-card-container">
-          {this.renderDestinations(this.destinationFilter())}
-        </div>
-      </React.Fragment>
-    )
+  destinationSort = () => {
+    let sortedList = ""
+    let destinations = this.props.destinations
+    sortedList = destinations.slice().sort((a, b) => b.likes - a.likes);
+    return sortedList
+  }
+
+  render() {
+    const isItSorted = this.state.sorted
+      return (
+        <React.Fragment>
+          <button onClick={this.handleClick}>by likes</button>
+          <AstroBodyFilter handleChange={this.handleFilterChange} />
+          <div className="dest-card-container">
+            { isItSorted === false ? this.renderDestinations(this.destinationFilter()) : this.renderDestinations(this.destinationSort())}
+          </div>
+        </React.Fragment>
+      )
   }
 };
 
