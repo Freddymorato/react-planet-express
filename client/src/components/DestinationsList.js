@@ -51,8 +51,8 @@ class DestinationsList extends React.Component {
     const isItSorted = this.state.sorted
       return (
         <React.Fragment>
-          <button onClick={this.handleClick}>by likes</button>
           <AstroBodyFilter handleChange={this.handleFilterChange} />
+          <button className="btn-sm" onClick={this.handleClick}>View by likes</button>
           <div className="dest-card-container">
             { isItSorted === false ? this.renderDestinations(this.destinationFilter()) : this.renderDestinations(this.destinationSort())}
           </div>
